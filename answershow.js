@@ -22,6 +22,10 @@
     buttons.forEach((btn, i) => {
       btn.classList.toggle("active", i + 1 === page);
     });
+   window.scrollTo({
+  top: 0,
+  behavior: "smooth"
+});
   }
 
   for (let i = 1; i <= totalPages; i++) {
