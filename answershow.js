@@ -8,7 +8,7 @@
     });
   }
 
-  const questionsPerPage = 5;
+  const questionsPerPage = 10;
   const questions = document.querySelectorAll(".question-block");
   const totalPages = Math.ceil(questions.length / questionsPerPage);
   const pagination = document.getElementById("pagination");
