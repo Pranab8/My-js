@@ -66,6 +66,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const correctAnswerText = qb
       .querySelector(".pnl")
       .innerText.replace("✅ Option:", "")
+      .trim()
+      .split("\n")[0]
       .trim();
 
     options.forEach(opt => {
